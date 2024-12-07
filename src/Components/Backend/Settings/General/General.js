@@ -1,4 +1,5 @@
 import { __ } from '@wordpress/i18n';
+import {useState} from 'react'
 
 import { PanelBody, SelectControl,__experimentalInputControl as InputControl } from '@wordpress/components';
 import { purposeTypeOptions } from '../../../../utils/options';
@@ -7,8 +8,10 @@ import { updateData } from '../../../../utils/functions';
 
 const General = ({ attributes, setAttributes }) => {
   const { purposeType } = attributes;
+  const [value,setValues]=useState('')
 
-  
+
+  console.log(value)
 
   return (
     <PanelBody className='bPlPanelBody' title={__('Purpose', 'b-blocks')} initialOpen={false}>
@@ -24,8 +27,8 @@ const General = ({ attributes, setAttributes }) => {
 	labelPosition="top"
 	value=""
 	type="email"
-	isPressEnterToChange
-	onChange={ ( nextValue ) => console.log(nextValue) }
+	// isPressEnterToChange
+	onChange={ ( nextValue ) => setValues(nextValue) }
 />
 
 
