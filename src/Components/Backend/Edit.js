@@ -2,6 +2,7 @@ import { useBlockProps } from "@wordpress/block-editor";
 
 import Settings from "./Settings/Settings";
 import Style from "../Common/Style";
+import MyComponentWithNavigateRegions from "../MyComponents/MyComponentWithNavigateRegions";
 
 const Edit = (props) => {
   const { attributes, setAttributes, clientId } = props;
@@ -30,6 +31,7 @@ const Edit = (props) => {
           )}
         </div>
       </div>
+      
     </>
   );
 };
