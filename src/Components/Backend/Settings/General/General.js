@@ -56,6 +56,7 @@ import MyToggleControl from '../../../MyComponents/MyToggleControl';
 import MyBorderBoxControl from '../../../MyComponents/MyBorderBoxControl';
 import MyUnitControl from '../../../MyComponents/MyUnitControl';
 import MyInspectControl from '../../../MyComponents/MyInspectControl';
+import MyBlockControl from '../../../MyComponents/MyBlockControl';
 const colors = [
   { name: 'Blue 20', color: '#72aee6' },
   // ...
@@ -131,39 +132,39 @@ const [ color, setColor ] = useState ( '' )
       />
 
       {/* input control added  */}
-      <InputControl
+      {/* <InputControl
 	label="InputControl"
 	labelPosition="top"
 	value=""
 	type="email"
 	// isPressEnterToChange
 	onChange={ ( nextValue ) => setValues(nextValue) }
-/>
+/> */}
 
  {/*AlignmentMatrixControl */}
- <AlignmentMatrixControl
+ {/* <AlignmentMatrixControl
             value={ alignment }
             onChange={ setAlignment }
-        />
+        /> */}
 
         {/* alignment */}
-        <AnglePickerControl
+        {/* <AnglePickerControl
       value={ angle }
       onChange={ setAngle }
-    />
+    /> */}
 
 
     {/* Animate */}
-    <Animate type="slide-in" options={ { origin: 'top' } }>
+    {/* <Animate type="slide-in" options={ { origin: 'top' } }>
         { ( { className } ) => (
             <Notice className={ className } status="success">
                 <p>Animation finished.</p>
             </Notice>
         ) }
-    </Animate>
+    </Animate> */}
 
     {/*  BaseControl */}
-    <BaseControl
+    {/* <BaseControl
 	help="Anything you want opens on click"
 >
 	<BaseControl.VisualLabel>
@@ -172,69 +173,69 @@ const [ color, setColor ] = useState ( '' )
 	<Button onClick={("select your author")}  style={{ marginLeft: "8px"}}>
 		Select an author
 	</Button>
-</BaseControl>
+</BaseControl> */}
 
 {/* BorderBoxControl */}
-<BorderBoxControl
+{/* <BorderBoxControl
             // __next40pxDefaultSize
             colors={ colors }
             label={ __( 'Borders' ) }
             onChange={(newBorders) => setBorders(newBorders)}
             value={ borders }
-        />
+        /> */}
 {/* BorderControl */}
 
-<BorderControl
+{/* <BorderControl
             __next40pxDefaultSize
             colors={ colors }
             label={ __( 'Border' ) }
             onChange={ setBborder }
             value={ bborder }
-        />
+        /> */}
 
         {/* ButtonGroup */}
-        <ButtonGroup>
+        {/* <ButtonGroup>
         <Button onChange={('button 1')} variant="primary">Button 1</Button>
         <Button onChange={('button 2')} variant="primary">Button 2</Button>
-    </ButtonGroup>
+    </ButtonGroup> */}
 
     {/* Button */}
-    <Button variant="secondary">Click me!</Button>;
+    {/* <Button variant="secondary">Click me!</Button>; */}
 
     {/* Card Body */}
-    <Card>
+    {/* <Card>
         <CardBody>Card Body</CardBody>
-    </Card>
+    </Card> */}
 
     {/* Card divid */}
-    <Card>
+    {/* <Card>
         <CardDivider />
         <CardBody>Card divider</CardBody>
-    </Card>
+    </Card> */}
     {/* Card footer */}
 
-    <Card>
+    {/* <Card>
     <CardFooter>
             <FlexBlock>Content</FlexBlock>
             <FlexItem>
                 <Button>Action</Button>
             </FlexItem>
         </CardFooter>
-    </Card>
+    </Card> */}
 {/* card header */}
-<Card>
+{/* <Card>
 <CardHeader>Card Header</CardHeader>
-</Card>
+</Card> */}
 {/* Card Media  */}
-<Card>
+{/* <Card>
 <CardMedia>
   <h1>Card Media</h1>
             <img src="https://i.ibb.co.com/4RBL613/1714662976645-2.jpg" />
         </CardMedia>
-</Card>
+</Card> */}
 
 {/* card  */}
-<Card>
+{/* <Card>
             <CardHeader>
                 <Heading level={ 4 }>Card Title</Heading>
             </CardHeader>
@@ -244,46 +245,46 @@ const [ color, setColor ] = useState ( '' )
             <CardFooter>
                 <Text>Card Footer</Text>
             </CardFooter>
-        </Card>
+        </Card> */}
         {/* checkbox  */}
-        <CheckboxControl
+        {/* <CheckboxControl
             __nextHasNoMarginBottom
             label="Is author"
             help="Is the user a author or not?"
             checked={ isChecked }
             onChange={ setChecked }
-        />
+        /> */}
 
 
 {/* ClipboardButton */}
-<ClipboardButton
+{/* <ClipboardButton
             variant="primary"
             text="Text to be copied."
             onCopy={ () => setHasCopied( true ) }
             onFinishCopy={ () => setHasCopied( false ) }
         >
             { hasCopied ? 'Copied!' : 'Copy Text' }
-        </ClipboardButton>
+        </ClipboardButton> */}
 
         {/* color indicator */}
-        <ColorIndicator colorValue="#0073aa" />
+        {/* <ColorIndicator colorValue="#0073aa" /> */}
 
         {/* color piker  */}
-        <ColorPalette
+        {/* <ColorPalette
             colors={ colors }
             value={ color }
             onChange={ ( color ) => setColor( color ) }
-        />
+        /> */}
 
 {/* color piker */}
-<ColorPicker
+{/* <ColorPicker
             color={color}
             onChange={setColor}
             enableAlpha
             defaultValue="#000"
-        />
+        /> */}
         {/* combo box control */}
-        <ComboboxControl
+        {/* <ComboboxControl
 	label="Font Size"
 	value="small"
 	options={[
@@ -328,24 +329,24 @@ const [ color, setColor ] = useState ( '' )
 			)
 		)
 	}
-/>
+/> */}
 
 {/* composite */}
-<Composite>
+{/* <Composite>
   <Composite.Group>
     <Composite.GroupLabel>Label</Composite.GroupLabel>
     <Composite.Item>Item 1</Composite.Item>
     <Composite.Item>Item 2</Composite.Item>
   </Composite.Group>
-</Composite>
+</Composite> */}
 
 {/* ConfirmDialog  */}
-<ConfirmDialog onConfirm={ () => console.debug( ' Confirmed! ' ) }>
+{/* <ConfirmDialog onConfirm={ () => console.debug( ' Confirmed! ' ) }>
             Are you sure? <strong>This action cannot be undone!</strong>
-        </ConfirmDialog>
+        </ConfirmDialog> */}
 
         {/*  CustomSelectControl*/}
-        <CustomSelectControl
+        {/* <CustomSelectControl
 	label="Font Size"
 	options={ [
 		{
@@ -382,39 +383,39 @@ const [ color, setColor ] = useState ( '' )
 			style: { fontSize: '125%' },
 		},
 	].find( ( option ) => option.key === 'large' ) }
-/>
+/> */}
 {/*Dashboard icon   */}
-<>
+{/* <>
         <Dashicon icon="admin-home" />
         <Dashicon icon="products" />
         <Dashicon icon="wordpress" />
-    </>
+    </> */}
 
     {/* Date Time piker  */}
-    <DateTimePicker
+    {/* <DateTimePicker
             currentDate={ date }
             onChange={ ( newDate ) => setDate( newDate ) }
             is12Hour={ true }
-        />
+        /> */}
         {/*  DimensionControl*/}
-        <DimensionControl
+        {/* <DimensionControl
             __nextHasNoMarginBottom
             __next40pxDefaultSize
             label={ 'Padding' }
             icon={ 'desktop' }
             onChange={ ( value ) => setPaddingSize( value ) }
             value={ paddingSize }
-        />
+        /> */}
 
         {/* disable components */}
-        <MyDisable></MyDisable>
+        {/* <MyDisable></MyDisable> */}
 
         {/* text divider  */}
-        <VStack spacing={2}>
+        {/* <VStack spacing={2}>
             <Text>Some text here</Text>
             <Divider />
             <Text>Some more text here</Text>
-        </VStack>
+        </VStack> */}
 
         {/* MyDraggable */}
         <MyDraggable></MyDraggable>
@@ -642,6 +643,8 @@ const [ color, setColor ] = useState ( '' )
     {/*  */}
 
     <MyInspectControl></MyInspectControl>
+    {/*  */}
+    {/* <MyBlockControl></MyBlockControl> */}
 
 
 
